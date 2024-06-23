@@ -8,8 +8,9 @@
 - ⚡This project demonstrates proficiency in machine learning, data analysis, data visualization, and model building for real-world  applications.
 <br/>
 <img  align="right" src="https://media.licdn.com/dms/image/C4D12AQERGi4BRBVf5A/article-cover_image-shrink_720_1280/0/1592071903807?e=2147483647&v=beta&t=oQO6fXk2vhJhTDUOm9uluYHYyTyin8C4976DEt1704w" />
-<br/>
-<h2 align="left">Requirements</h2>
+<br/><br/>
+
+<h2 align="center">Requirements</h2>
 
 - Python 3.x
 - pandas
@@ -27,7 +28,7 @@
 - After performing all necessary actions, created a new csv file named 'Clean_hotel_data' which was used further in deployment of model.
 
 <h2 align="center">Training the Model</h2>
-<img  align="right" height=390 width=330 src="https://www.ijraset.com/images/text_version_uploads/imag%201_10253.png" />
+<img  align="right" height=350 width=330 src="https://www.ijraset.com/images/text_version_uploads/imag%201_10253.png" />
 
 - To deploy this model we used pycharm platform and flask framework.
 -  Loads the data from the CSV file "Clean_hotel_data".
