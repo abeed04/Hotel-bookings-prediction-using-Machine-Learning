@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Booking Details</title>
+  <link href = 'https://fonts.googleapis.com/css?family=Pacifico' rel ='stylesheet'  type='text/css'>
+<link href = 'https://fonts.googleapis.com/css?family=Arimo' rel ='stylesheet'  type='text/css'>
+<link href = 'https://fonts.googleapis.com/css?family=Hind:300' rel ='stylesheet'  type='text/css'>
+<link href = 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel ='stylesheet'  type='text/css'>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Hotel Bookings Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="hotel" placeholder="Hotel Name" required="required" /> <br>
+        <input type="number" name="lead_time" placeholder="Lead Time (in days)" required="required" /> <br>
+        <input type="number" name="arrival_date_year" placeholder="Arrival Date Year (YYYY)" required="required" /> <br>
+        <input type="number" name="arrival_date_week_number" placeholder="Arrival Date Week Number" required="required" /> <br>
+        <input type="number" name="arrival_date_day_of_month" placeholder="Arrival Date Day of Month" required="required" /> <br>
+        <input type="number" name="stays_in_weekend_nights" placeholder="Stays in Weekend Nights" required="required" /> <br>
+        <input type="number" name="stays_in_week_nights" placeholder="Stays in Week Nights" required="required" /> <br>
+        <input type="number" name="adults" placeholder="Number of Adults" required="required" /> <br>
+        <input type="text" name="distribution_channel" placeholder="Distribution Channel" required="required" /> <br>
+        <input type="text" name="is_repeated_guest" placeholder="Is Repeated Guest (True/False)" required="required" /> <br>
+        <input type="number" name="previous_cancellations" placeholder="Previous Cancellations" required="required" /> <br>
+        <input type="number" name="previous_bookings_not_canceled" placeholder="Previous Bookings Not Canceled" required="required" /> <br>
+        <input type="text" name="reserved_room_type" placeholder="Reserved Room Type" required="required" /> <br>
+        <input type="text" name="assigned_room_type" placeholder="Assigned Room Type" required="required" /> <br>
+        <input type="number" name="booking_changes" placeholder="Booking Changes" required="required" /> <br>
+        <input type="number" name="days_in_waiting_list" placeholder="Days in Waiting List" required="required" /> <br>
+        <input type="text" name="customer_type" placeholder="Customer Type" required="required" /> <br>
+        <input type="number" name="adr" placeholder="Average Daily Rate" required="required" /> <br>
+        <input type="number" name="required_car_parking_spaces" placeholder="Required Car Parking Spaces" required="required" /> <br>
+        <input type="number" name="total_of_special_requests" placeholder="Total Special Requests" required="required" /> <br>
+
+		<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

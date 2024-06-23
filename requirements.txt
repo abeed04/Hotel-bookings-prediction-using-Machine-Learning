@@ -1,0 +1,8 @@
+numpy ==2.0.0
+pandas ==2.2.2
+sklearn ==0.0.post12
+pickle5 ==0.0.12
+flask ==3.0.3
+
+pickle.dump(model,open("model.pkl","wb"))
+print(x.shape)
